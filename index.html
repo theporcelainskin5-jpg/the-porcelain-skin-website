@@ -812,7 +812,7 @@ document.addEventListener('DOMContentLoaded',function(){
  const guide=document.getElementById('guide');
  if(guide && !document.querySelector('.quick-access-v1350')){
   const box=document.createElement('div'); box.className='quick-access-v1350';
-  box.innerHTML='<a href="#gift-card">GIFT CARD <span>→</span></a><a href="#rewards">REWARDS <span>→</span></a>';
+ box.innerHTML='';
   const head=guide.querySelector('.guide-head'); if(head) head.appendChild(box);
  }
  // Service-specific booking buttons are hidden until a direct Square service URL is configured.
