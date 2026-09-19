@@ -1000,4 +1000,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  function cerrarMenuPorcelain() {
+    var toggle = document.getElementById('ps-menu-toggle');
+    if (toggle) toggle.checked = false;
+
+    var drawer = document.getElementById('drawer');
+    if (drawer) drawer.classList.remove('open');
+
+    document.body.classList.remove('menu-open');
+    document.documentElement.classList.remove('menu-open');
+  }
+
+  /* La X del menú */
+  document.querySelectorAll(
+    '.ps-menu-close, .menu-close, [aria-label="Cerrar"], [aria-label="Close"]'
+  ).forEach(function(btn) {
+    btn.addEventListener('click', cerrarMenuPorcelain);
+  });
+
+  /* Cualquier enlace dentro del menú */
+  document.querySelectorAll(
+    '#drawer a, .ps-menu a, .menu-drawer a'
+  ).forEach(function(link) {
+    link.addEventListener('click', function() {
+      cerrarMenuPorcelain();
+    });
+  });
+
+});
+</script>
 </body></html>
