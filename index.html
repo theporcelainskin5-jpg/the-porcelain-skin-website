@@ -908,7 +908,7 @@ html{scroll-behavior:smooth}
 </style>
 <script id="v1360-safe-js">
 (function(){
-  function closeDrawer(){var d=document.getElementById('drawer'); if(d)d.classList.remove('open');}
+  function closeDrawer(){var t=document.getElementById('ps-menu-toggle');if(t)t.checked=false;var d=document.getElementById('drawer');if(d)d.classList.remove('open');}
   window.menu=function(){var d=document.getElementById('drawer'); if(d)d.classList.toggle('open');};
   window.psGo=function(id){var el=document.getElementById(id); if(el){el.scrollIntoView({behavior:'smooth',block:'start'});} closeDrawer(); return false;};
   document.addEventListener('DOMContentLoaded',function(){
