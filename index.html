@@ -945,5 +945,59 @@ button.textbtn{border:0;background:transparent}
 button.ps-footer-link{width:100%;background:transparent;color:inherit;border-left:0;border-right:0;border-top:1px solid rgba(255,255,255,.13);border-bottom:0;padding-left:0;padding-right:0;text-align:left}
 #loyalty-live-link[aria-disabled="true"]{opacity:.72}
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  // Busca el menú lateral abierto
+  const menu =
+    document.querySelector(".drawer") ||
+    document.querySelector(".mobile-menu") ||
+    document.querySelector(".menu-drawer") ||
+    document.querySelector("nav");
+
+  if (!menu) return;
+
+  // Función para cerrar el menú
+  function cerrarMenu() {
+    menu.classList.remove("open", "active", "show");
+
+    // Por si el menú se abre usando atributos
+    menu.removeAttribute("open");
+    menu.setAttribute("aria-hidden", "true");
+
+    // Devuelve el scroll normal de la página
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  }
+
+  // Cerrar automáticamente al tocar cualquier enlace del menú
+  menu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      setTimeout(cerrarMenu, 100);
+    });
+  });
+
+  // Hacer funcionar la X
+  const botones = menu.querySelectorAll("button, .close, .menu-close, [aria-label*='close' i]");
+
+  botones.forEach(function (boton) {
+    boton.addEventListener("click", function (e) {
+      const texto = (boton.textContent || "").trim();
+
+      if (
+        texto === "×" ||
+        texto === "✕" ||
+        texto === "X" ||
+        boton.classList.contains("close") ||
+        boton.classList.contains("menu-close") ||
+        (boton.getAttribute("aria-label") || "").toLowerCase().includes("close")
+      ) {
+        e.preventDefault();
+        cerrarMenu();
+      }
+    });
+  });
+
+});
+</script>
 </body></html>
