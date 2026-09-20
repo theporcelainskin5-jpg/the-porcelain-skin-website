@@ -1056,5 +1056,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+// Mostrar confirmación de Gift Card solo al regresar de Square
+if (new URLSearchParams(window.location.search).get('giftcard') === 'success') {
+  const confirmacion = document.getElementById('gift-card-confirmada');
+  if (confirmacion) {
+    confirmacion.style.display = 'block';
+    setTimeout(() => {
+      confirmacion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 200);
+  }
+}
 </script>
 </body></html>
