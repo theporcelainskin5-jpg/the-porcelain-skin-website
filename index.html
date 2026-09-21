@@ -1084,7 +1084,7 @@ function enviarDatosGiftCard() {
 const para = datos.para || '';
 const de = datos.de || '';
 const mensaje = datos.mensaje || '';
-const fecha = datos.fecha || '';
+const fecha = datos.fecha ? new Date(datos.fecha + 'T12:00:00').toLocaleDateString('es-US', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
 const entrega = datos.entrega || '';
 const contacto = datos.contacto || '';
 const monto = datos.monto || '';
