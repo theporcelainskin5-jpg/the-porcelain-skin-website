@@ -600,1068 +600,850 @@ h1,h2,h3,.serif,.section-no,.service-card h3,.tech-section h3,.tech-grid summary
 <style id="desktop-polish">
 @media (min-width:900px){
 
-/* =========================================================
-   THE PORCELAIN SKIN — DESKTOP V2
-   Solo modifica pantallas de 900px en adelante.
-   La versión móvil permanece intacta.
-========================================================= */
-
-
-/* =========================================================
-   01. CONTENEDOR GENERAL
-========================================================= */
-
-body{
-  margin:0!important;
-  padding:24px!important;
-  background:#ded4cb!important;
-}
-
-.phone{
-  width:100%!important;
-  max-width:1240px!important;
-  margin:0 auto!important;
-  min-height:100vh!important;
-  overflow:hidden!important;
-  background:var(--milk)!important;
-  box-shadow:0 25px 70px rgba(42,33,29,.14)!important;
-}
-
-.block{
-  padding:90px 72px!important;
-}
-
-.block.alt{
-  background:var(--paper)!important;
-}
-
-section[id]{
-  scroll-margin-top:115px!important;
-}
-
-
-/* =========================================================
-   02. HEADER + LOGO
-========================================================= */
-
-.top{
-  height:122px!important;
-  padding:0 60px!important;
-  display:flex!important;
-  align-items:center!important;
-}
-
-.brand{
-  display:flex!important;
-  align-items:center!important;
-}
-
-.brand-logo{
-  width:285px!important;
-  height:102px!important;
-  max-width:none!important;
-  max-height:none!important;
-  object-fit:contain!important;
-  object-position:left center!important;
-}
-
-.hamb{
-  font-size:32px!important;
-  padding:14px!important;
-}
-
-
-/* =========================================================
-   03. MENÚ
-========================================================= */
-
-.menu-panel{
-  width:min(42vw,520px)!important;
-  padding:44px 40px!important;
-}
-
-.menu-panel .mbrand{
-  margin:70px 0 38px!important;
-  font-size:36px!important;
-}
-
-.menu-panel .ps-menu-button,
-.menu-panel a{
-  font-size:22px!important;
-  padding:17px 0!important;
-}
-
-.menu-panel small{
-  font-size:11px!important;
-  line-height:1.8!important;
-}
-
-.x{
-  font-size:34px!important;
-}
-
-
-/* =========================================================
-   04. PORTADA
-========================================================= */
-
-.hero{
-  position:relative!important;
-  min-height:auto!important;
-  padding:58px 72px 82px!important;
-  overflow:hidden!important;
-}
-
-.hero .eyebrow{
-  font-size:13px!important;
-  letter-spacing:.28em!important;
-  margin-bottom:18px!important;
-}
-
-.hero .careline{
-  font-family:"Playfair Display",serif!important;
-  font-size:27px!important;
-  line-height:1.3!important;
-  text-align:center!important;
-  margin:8px auto 18px!important;
-}
-
-.hero h1,
-.hero .hero-title{
-  max-width:900px!important;
-  margin:8px auto 24px!important;
-  font-size:78px!important;
-  line-height:.97!important;
-  letter-spacing:-.025em!important;
-  text-align:center!important;
-}
-
-.hero-copy{
-  max-width:none!important;
-  margin:0 auto!important;
-  padding:0!important;
-  background:none!important;
-  text-align:center!important;
-  font-family:"Playfair Display",serif!important;
-  font-size:17px!important;
-  line-height:1.55!important;
-  letter-spacing:.07em!important;
-}
-
-
-/* FOTO PORTADA */
-
-.visual{
-  position:relative!important;
-  width:100%!important;
-  max-width:1040px!important;
-  height:690px!important;
-  margin:44px auto 38px!important;
-  overflow:visible!important;
-}
-
-.portrait,
-.portrait-real{
-  position:absolute!important;
-  top:0!important;
-  right:0!important;
-  left:auto!important;
-
-  width:72%!important;
-  height:690px!important;
-  min-height:690px!important;
-
-  border-radius:345px 345px 28px 28px!important;
-
-  background-size:contain!important;
-  background-position:center top!important;
-  background-repeat:no-repeat!important;
-
-  overflow:hidden!important;
-}
-
-.portrait:before{
-  display:none!important;
-}
-
-
-/* TARJETA PORTADA */
-
-.mini-card{
-  position:absolute!important;
-  z-index:6!important;
-
-  left:0!important;
-  right:auto!important;
-  top:auto!important;
-  bottom:55px!important;
-
-  width:36%!important;
-  max-width:360px!important;
-  min-height:225px!important;
-
-  margin:0!important;
-  padding:34px 30px!important;
-
-  border-radius:28px!important;
-  transform:none!important;
-}
-
-.mini-card .star{
-  font-size:18px!important;
-}
-
-.mini-card b{
-  display:block!important;
-  font-size:34px!important;
-  line-height:1.08!important;
-  margin:7px 0 12px!important;
-}
-
-.mini-card span{
-  font-size:14px!important;
-  line-height:1.6!important;
-}
-
-.hero > .cta{
-  padding:19px 36px!important;
-  font-size:13px!important;
-}
-
-.hero > .textbtn{
-  padding:19px 25px!important;
-  font-size:13px!important;
-}
-
-
-/* =========================================================
-   05. TÍTULOS GENERALES / NÚMEROS DE SECCIÓN
-========================================================= */
-
-.section-no,
-.pe-kicker,
-#brows-lashes > .eyebrow{
-  font-size:14px!important;
-  line-height:1.4!important;
-  letter-spacing:.20em!important;
-}
-
-.block > h2{
-  font-size:60px!important;
-  line-height:1.02!important;
-  margin:22px 0 18px!important;
-}
-
-.intro{
-  max-width:760px!important;
-  font-size:17px!important;
-  line-height:1.7!important;
-}
-
-
-/* =========================================================
-   06. THE PORCELAIN EXPERIENCE
-========================================================= */
-
-#experience{
-  padding:92px 72px!important;
-}
-
-.pe-kicker{
-  margin-bottom:20px!important;
-}
-
-.pe-head{
-  max-width:940px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-
-.pe-head h2{
-  font-size:64px!important;
-  line-height:1.02!important;
-  margin-bottom:24px!important;
-}
-
-.pe-head p{
-  max-width:800px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-  font-size:18px!important;
-  line-height:1.7!important;
-}
-
-
-/* FOTO + FRASE */
-
-.pe-visual{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:44px auto 34px!important;
-}
-
-.pe-photo{
-  min-height:580px!important;
-}
-
-.pe-quote{
-  padding:36px!important;
-}
-
-.pe-quote .pe-star{
-  font-size:17px!important;
-}
-
-.pe-quote p{
-  font-size:31px!important;
-  line-height:1.2!important;
-}
-
-
-/* PERSONALIZADO / CON INTENCIÓN / SIN PRISAS */
-
-.pe-values{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:30px auto!important;
-}
-
-.pe-values article{
-  min-height:115px!important;
-  padding:24px 18px!important;
-  display:grid!important;
-  grid-template-columns:38px 220px 1fr!important;
-  align-items:center!important;
-  column-gap:18px!important;
-}
-
-.pe-values article > span{
-  font-size:12px!important;
-  letter-spacing:.14em!important;
-}
-
-.pe-values article h3{
-  margin:0!important;
-  font-size:29px!important;
-  line-height:1.12!important;
-}
-
-.pe-values article p{
-  margin:0!important;
-  font-size:16px!important;
-  line-height:1.65!important;
-}
-
-
-/* FIRMA EXPERIENCE */
-
-.pe-signature{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:30px auto 0!important;
-  padding:36px!important;
-}
-
-.pe-mini{
-  font-size:11px!important;
-  letter-spacing:.17em!important;
-}
-
-.pe-signature h3{
-  margin-top:12px!important;
-  font-size:46px!important;
-  line-height:1.06!important;
-}
-
-
-/* =========================================================
-   07. FACIALS
-========================================================= */
-
-#servicios{
-  padding-top:92px!important;
-  padding-bottom:92px!important;
-}
-
-#servicios > .section-no{
-  font-size:14px!important;
-}
-
-#servicios > h2{
-  font-size:62px!important;
-}
-
-#servicios > .intro{
-  font-size:17px!important;
-}
-
-.service-menu{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:42px auto 0!important;
-}
-
-.service-card{
-  width:100%!important;
-  min-height:185px!important;
-  padding:36px 88px 36px 36px!important;
-  box-sizing:border-box!important;
-}
-
-.service-num{
-  font-size:12px!important;
-}
-
-.service-card h3{
-  font-size:35px!important;
-  line-height:1.08!important;
-}
-
-.web-price{
-  font-size:21px!important;
-}
-
-.web-time{
-  font-size:12px!important;
-  line-height:1.4!important;
-}
-
-.service-tag{
-  font-size:12px!important;
-  line-height:1.5!important;
-}
-
-.facial-details-body,
-.facial-details-body p,
-.includes,
-.ideal{
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-
-/* =========================================================
-   08. CONOCE NUESTRAS TÉCNICAS
-========================================================= */
-
-.tech-section{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:78px auto 0!important;
-}
-
-.tech-section > .section-no{
-  font-size:14px!important;
-  letter-spacing:.20em!important;
-}
-
-.tech-section > h3{
-  margin:14px 0 8px!important;
-  font-family:"Playfair Display",serif!important;
-  font-size:46px!important;
-  line-height:1.05!important;
-  font-weight:400!important;
-}
-
-.tech-lead{
-  max-width:720px!important;
-  margin:0 0 34px!important;
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-.tech-grid{
-  width:100%!important;
-}
-
-.tech-grid details{
-  padding:0!important;
-}
-
-.tech-grid summary{
-  min-height:92px!important;
-  padding:20px 8px!important;
-  display:flex!important;
-  align-items:center!important;
-}
-
-.tech-grid summary > span{
-  font-family:"Playfair Display",serif!important;
-  font-size:25px!important;
-  line-height:1.2!important;
-}
-
-.tech-grid summary small{
-  margin-left:auto!important;
-  font-size:11px!important;
-  line-height:1.4!important;
-  letter-spacing:.08em!important;
-}
-
-.tech-grid details > p{
-  padding:0 80px 24px 8px!important;
-  font-size:15px!important;
-  line-height:1.7!important;
-}
-
-
-/* =========================================================
-   09. BOTONES +
-========================================================= */
-
-#servicios .facial-details > summary,
-#brows-lashes .native-plus,
-#brows-lashes .bl-arrow,
-.tech-grid summary::after{
-  width:52px!important;
-  height:52px!important;
-  min-width:52px!important;
-  flex:0 0 52px!important;
-  font-size:23px!important;
-}
-
-
-/* =========================================================
-   10. BROWS & LASHES
-========================================================= */
-
-#brows-lashes{
-  padding:92px 72px!important;
-}
-
-#brows-lashes > .eyebrow{
-  margin-bottom:18px!important;
-}
-
-#brows-lashes .bl-title{
-  max-width:780px!important;
-  margin:0 auto 20px!important;
-  font-size:62px!important;
-  line-height:1.02!important;
-  text-align:center!important;
-}
-
-#brows-lashes .bl-lead{
-  max-width:720px!important;
-  margin:0 auto 42px!important;
-  font-size:17px!important;
-  line-height:1.7!important;
-  text-align:center!important;
-}
-
-
-/*
-   IMPORTANTE:
-   En las fotos las tarjetas quedaron demasiado angostas.
-   Ahora ocupan el ancho útil de la sección.
-*/
-
-#brows-lashes .bl-grid{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:0 auto!important;
-
-  display:grid!important;
-  grid-template-columns:repeat(2,minmax(0,1fr))!important;
-  gap:20px!important;
-}
-
-#brows-lashes .bl-card{
-  position:relative!important;
-
-  width:100%!important;
-  max-width:none!important;
-  min-width:0!important;
-  min-height:290px!important;
-
-  margin:0!important;
-  padding:34px 84px 34px 34px!important;
-
-  box-sizing:border-box!important;
-  border-radius:26px!important;
-}
-
-#brows-lashes .bl-card:nth-child(5):last-child{
-  grid-column:1/-1!important;
-}
-
-#brows-lashes .bl-card summary{
-  width:100%!important;
-}
-
-#brows-lashes .bl-number{
-  font-size:12px!important;
-}
-
-#brows-lashes .bl-card h3{
-  max-width:340px!important;
-  margin:10px 0!important;
-  font-size:35px!important;
-  line-height:1.06!important;
-}
-
-#brows-lashes .web-price{
-  font-size:21px!important;
-}
-
-#brows-lashes .web-time{
-  font-size:12px!important;
-}
-
-#brows-lashes .bl-sub{
-  font-size:11px!important;
-  line-height:1.5!important;
-}
-
-#brows-lashes .native-more{
-  margin-top:22px!important;
-  padding-top:20px!important;
-  font-size:15px!important;
-  line-height:1.7!important;
-}
-
-#brows-lashes .native-plus{
-  position:absolute!important;
-  top:30px!important;
-  right:26px!important;
-}
-
-
-/* COMBINA TUS SERVICIOS */
-
-#brows-lashes .bl-combine,
-#brows-lashes .combine-services{
-  width:100%!important;
-  max-width:1000px!important;
-  margin:28px auto 0!important;
-  padding:28px 30px!important;
-}
-
-#brows-lashes .bl-combine h3,
-#brows-lashes .combine-services h3{
-  font-size:27px!important;
-}
-
-#brows-lashes .bl-combine p,
-#brows-lashes .combine-services p{
-  font-size:14px!important;
-}
-
-
-/* =========================================================
-   11. ¿NO SABES QUÉ ELEGIR?
-========================================================= */
-
-#guide{
-  padding:92px 72px!important;
-}
-
-#guide .section-no{
-  font-size:14px!important;
-}
-
-.guide-head{
-  width:100%!important;
-  max-width:800px!important;
-  margin:0 auto 40px!important;
-}
-
-.guide-head .eyebrow,
-.guide-head small{
-  font-size:12px!important;
-  letter-spacing:.16em!important;
-}
-
-.guide-head h2{
-  font-size:62px!important;
-  line-height:1.02!important;
-  margin:16px 0!important;
-}
-
-#guide .guide-head p{
-  max-width:700px!important;
-  font-size:17px!important;
-  line-height:1.7!important;
-}
-
-.guide-card{
-  width:100%!important;
-  max-width:800px!important;
-  margin:0 auto!important;
-  padding:38px!important;
-  border-radius:30px!important;
-}
-
-.guide-q .qnum{
-  font-size:13px!important;
-}
-
-.guide-q h3,
-.guide-result h3{
-  font-size:31px!important;
-  line-height:1.2!important;
-}
-
-.guide-q button,
-.guide-choice{
-  min-height:58px!important;
-  padding:17px 20px!important;
-  font-size:15px!important;
-}
-
-
-/* =========================================================
-   12. AGENDAR CITA
-========================================================= */
-
-#agenda{
-  padding:92px 72px!important;
-}
-
-.booking-polish{
-  width:100%!important;
-  max-width:860px!important;
-  margin:0 auto!important;
-}
-
-.booking-kicker{
-  font-size:13px!important;
-  letter-spacing:.20em!important;
-}
-
-.booking-polish h2{
-  font-size:58px!important;
-  line-height:1.04!important;
-}
-
-.booking-note,
-.booking-process-v1329{
-  max-width:760px!important;
-  margin:28px auto!important;
-  padding:26px!important;
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-
-/* =========================================================
-   13. FORMULARIOS
-========================================================= */
-
-.form{
-  width:100%!important;
-  max-width:760px!important;
-  margin:30px auto 0!important;
-}
-
-.form input,
-.form select,
-.form textarea{
-  width:100%!important;
-  box-sizing:border-box!important;
-  min-height:56px!important;
-  padding:16px 17px!important;
-  margin:8px 0!important;
-  font-size:15px!important;
-}
-
-.form textarea{
-  min-height:130px!important;
-}
-
-.form label{
-  font-size:13px!important;
-}
-
-.form button[type="submit"],
-.form .cta{
-  min-height:58px!important;
-  font-size:13px!important;
-}
-
-
-/* =========================================================
-   14. MI FIDELIDAD
-   REDUCIDA Y CENTRADA
-========================================================= */
-
-#fidelidad{
-  padding:92px 72px!important;
-}
-
-#fidelidad > .section-no{
-  font-size:14px!important;
-}
-
-#fidelidad > h2{
-  font-size:58px!important;
-  text-align:center!important;
-}
-
-
-/*
-   En tu captura estaba ocupando casi todo el ancho.
-   Ahora vuelve a verse como una tarjeta.
-*/
-
-#fidelidad .real-loyal,
-#fidelidad .loyal{
-  width:100%!important;
-  max-width:680px!important;
-  margin:34px auto 30px!important;
-  border-radius:28px!important;
-  overflow:hidden!important;
-}
-
-#fidelidad .loyal-photo,
-#fidelidad .loyal-top{
-  width:100%!important;
-  height:190px!important;
-  min-height:190px!important;
-  max-height:190px!important;
-}
-
-#fidelidad .loyal-photo img,
-#fidelidad .loyal-top img{
-  width:100%!important;
-  height:100%!important;
-  object-fit:cover!important;
-}
-
-#fidelidad .real-loyal h3,
-#fidelidad .loyal h3{
-  font-size:30px!important;
-}
-
-#fidelidad .lslogan,
-#fidelidad .loyal .slogan{
-  font-size:13px!important;
-}
-
-#fidelidad .llabel,
-#fidelidad .loyal-label{
-  font-size:10px!important;
-  letter-spacing:.20em!important;
-}
-
-#fidelidad .lnumber,
-#fidelidad .loyal-no{
-  font-size:11px!important;
-}
-
-#fidelidad .real-loyal p,
-#fidelidad .loyal p{
-  max-width:540px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-  font-size:13px!important;
-  line-height:1.6!important;
-}
-
-#fidelidad .real-stamps,
-#fidelidad .stamps{
-  width:100%!important;
-  max-width:540px!important;
-  margin:22px auto 14px!important;
-  gap:10px!important;
-}
-
-#fidelidad .real-stamps span,
-#fidelidad .stamp{
-  width:auto!important;
-  aspect-ratio:1/1!important;
-  font-size:14px!important;
-}
-
-#fidelidad .count{
-  font-size:12px!important;
-}
-
-#fidelidad .progress{
-  max-width:540px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-
-#fidelidad > .cta,
-#fidelidad > .full{
-  display:block!important;
-  width:100%!important;
-  max-width:680px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-
-
-/* =========================================================
-   15. GIFT CARDS
-========================================================= */
-
-#regalo{
-  padding:92px 72px!important;
-}
-
-#regalo > .section-no{
-  font-size:14px!important;
-}
-
-#regalo > h2{
-  max-width:850px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-  font-size:55px!important;
-  line-height:1.05!important;
-  text-align:center!important;
-}
-
-#regalo > p{
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-.gift-stage{
-  width:100%!important;
-  max-width:760px!important;
-  margin:36px auto 0!important;
-  padding:38px 30px 44px!important;
-  border-radius:30px!important;
-}
-
-.gift{
-  min-height:320px!important;
-  padding:36px!important;
-  border-radius:25px!important;
-}
-
-.gift .gbrand{
-  font-size:28px!important;
-}
-
-.gift .for{
-  margin-top:58px!important;
-  font-size:12px!important;
-}
-
-.gift .name{
-  font-size:38px!important;
-}
-
-.gift .bottom{
-  font-size:11px!important;
-}
-
-.chips{
-  gap:12px!important;
-}
-
-.chip{
-  padding:12px 17px!important;
-  font-size:11px!important;
-}
-
-
-/* =========================================================
-   16. FAQ
-========================================================= */
-
-#faq{
-  padding:92px 72px!important;
-}
-
-#faq > .section-no{
-  font-size:14px!important;
-}
-
-#faq > h2{
-  font-size:58px!important;
-}
-
-#faq details{
-  width:100%!important;
-  max-width:820px!important;
-  margin:0 auto!important;
-  padding:23px 0!important;
-}
-
-#faq summary{
-  font-size:23px!important;
-  line-height:1.3!important;
-}
-
-#faq details p{
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-
-/* =========================================================
-   17. CONTACTO
-========================================================= */
-
-#contacto{
-  padding:76px 72px!important;
-}
-
-#contacto .brand-note-v1326{
-  font-size:14px!important;
-}
-
-#contacto h2,
-#contacto .contact-title{
-  max-width:850px!important;
-  font-size:58px!important;
-  line-height:1.02!important;
-}
-
-#contacto .contact-intro,
-#contacto > p{
-  font-size:16px!important;
-  line-height:1.7!important;
-}
-
-#contacto a{
-  min-height:60px!important;
-  display:flex!important;
-  align-items:center!important;
-  font-size:17px!important;
-}
-
-#contacto .loc,
-#contacto small{
-  font-size:11px!important;
-  line-height:1.8!important;
-}
-
-
-/* =========================================================
-   18. BOTONES GENERALES
-========================================================= */
-
-.cta,
-.btn{
-  font-size:13px!important;
-}
-
-.full{
-  width:100%!important;
-}
-
-
-/* =========================================================
-   19. EVITAR ELEMENTOS DESPROPORCIONADOS
-========================================================= */
-
-img{
-  max-width:100%;
-}
-
-.service-card,
-.bl-card,
-.guide-card,
-.gift-stage,
-.real-loyal{
-  box-sizing:border-box!important;
-}
+  /* =========================================================
+     THE PORCELAIN SKIN — DESKTOP
+     Mismo lenguaje visual del teléfono, escalado a web.
+     Móvil NO se modifica.
+  ========================================================== */
+
+  body{
+    margin:0!important;
+    padding:24px!important;
+    background:#ded4cb!important;
+  }
+
+  .phone{
+    width:100%!important;
+    max-width:1240px!important;
+    margin:0 auto!important;
+    min-height:100vh!important;
+    overflow:hidden!important;
+    background:var(--milk)!important;
+    box-shadow:0 25px 70px rgba(42,33,29,.16)!important;
+  }
+
+  /* =========================================================
+     HEADER
+  ========================================================== */
+
+  .top{
+    height:108px!important;
+    padding:0 64px!important;
+  }
+
+  .brand{
+    display:flex!important;
+    align-items:center!important;
+  }
+
+  .brand-logo{
+    display:block!important;
+    width:220px!important;
+    height:82px!important;
+    max-height:none!important;
+    object-fit:contain!important;
+    object-position:left center!important;
+  }
+
+  .hamb{
+    font-size:30px!important;
+    padding:14px!important;
+  }
+
+  /* Menú lateral: misma apariencia del móvil, mayor */
+  .menu-panel{
+    width:min(42vw,520px)!important;
+    padding:42px 38px!important;
+  }
+
+  .menu-panel .mbrand{
+    margin:70px 0 38px!important;
+    font-size:34px!important;
+  }
+
+  .menu-panel .ps-menu-button,
+  .menu-panel a{
+    font-size:23px!important;
+    padding:17px 0!important;
+  }
+
+  .menu-panel small{
+    margin-top:38px!important;
+    font-size:10px!important;
+    line-height:1.8!important;
+  }
+
+  .x{
+    font-size:34px!important;
+  }
+
+  /* =========================================================
+     PORTADA
+     MISMA COMPOSICIÓN DEL TELÉFONO
+  ========================================================== */
+
+  .hero{
+    position:relative!important;
+    min-height:auto!important;
+    padding:54px 72px 78px!important;
+    overflow:hidden!important;
+    background:linear-gradient(180deg,#fbf5ee,#fffdf9)!important;
+  }
+
+  .hero > *{
+    position:relative;
+    z-index:2;
+  }
+
+  .hero .eyebrow{
+    font-size:11px!important;
+    letter-spacing:.30em!important;
+    margin:0 0 15px!important;
+  }
+
+  .hero .careline{
+    font:400 24px/1.25 "Playfair Display",serif!important;
+    color:#8b6f5a!important;
+    text-align:center!important;
+    margin:10px auto 14px!important;
+  }
+
+  .hero h1,
+  .hero .hero-title{
+    font-size:76px!important;
+    line-height:.98!important;
+    letter-spacing:-.025em!important;
+    max-width:850px!important;
+    margin:8px auto 20px!important;
+    text-align:center!important;
+    overflow:visible!important;
+  }
+
+  .hero h1 em{
+    font-weight:400!important;
+    color:var(--bronze)!important;
+  }
+
+  .hero-copy{
+    max-width:none!important;
+    margin:0 auto!important;
+    padding:0!important;
+    background:none!important;
+    text-align:center!important;
+    font:400 15px/1.55 "Playfair Display",serif!important;
+    letter-spacing:.08em!important;
+    color:var(--taupe)!important;
+  }
+
+  /*
+     La relación visual del móvil es:
+     tarjeta a la izquierda + foto vertical a la derecha.
+     Se mantiene exactamente esa lógica.
+  */
+  .visual{
+    position:relative!important;
+    width:100%!important;
+    max-width:1040px!important;
+    height:690px!important;
+    margin:42px auto 34px!important;
+    overflow:visible!important;
+  }
+
+  /*
+     FOTO COMPLETA.
+     contain evita que desktop corte cabeza/piernas.
+  */
+  .portrait,
+  .portrait-real{
+    position:absolute!important;
+    top:0!important;
+    right:0!important;
+    left:auto!important;
+
+    width:72%!important;
+    height:690px!important;
+    min-height:690px!important;
+
+    border-radius:345px 345px 28px 28px!important;
+
+    background-size:contain!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+
+    box-shadow:0 28px 50px rgba(73,54,45,.14)!important;
+    overflow:hidden!important;
+  }
+
+  .portrait:before{
+    display:none!important;
+  }
+
+  .mini-card{
+    position:absolute!important;
+    z-index:6!important;
+
+    left:0!important;
+    right:auto!important;
+    top:auto!important;
+    bottom:54px!important;
+
+    width:36%!important;
+    max-width:360px!important;
+    min-height:225px!important;
+
+    margin:0!important;
+    padding:34px 30px!important;
+
+    background:#fffaf5!important;
+    border:1px solid var(--line)!important;
+    border-radius:28px!important;
+    box-shadow:0 18px 36px rgba(73,54,45,.11)!important;
+    transform:none!important;
+  }
+
+  .mini-card .star{
+    font-size:17px!important;
+  }
+
+  .mini-card b{
+    display:block!important;
+    font:500 34px/1.07 "Playfair Display",serif!important;
+    margin:7px 0 12px!important;
+  }
+
+  .mini-card span{
+    font-size:12px!important;
+    line-height:1.6!important;
+  }
+
+  .hero > .cta{
+    padding:18px 34px!important;
+    border-radius:999px!important;
+    font-size:12px!important;
+    letter-spacing:.18em!important;
+  }
+
+  .hero > .textbtn{
+    padding:18px 24px!important;
+    font-size:12px!important;
+    letter-spacing:.13em!important;
+  }
+
+  /* =========================================================
+     SISTEMA GENERAL DE SECCIONES
+     Mantiene la composición vertical del teléfono.
+  ========================================================== */
+
+  .block{
+    padding:88px 72px!important;
+  }
+
+  .block.alt{
+    background:var(--paper)!important;
+  }
+
+  .section-no{
+    font-size:13px!important;
+    padding-bottom:12px!important;
+  }
+
+  .block h2{
+    font-size:56px!important;
+    line-height:1.03!important;
+    margin:22px 0 16px!important;
+  }
+
+  .intro{
+    max-width:720px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:15px!important;
+    line-height:1.75!important;
+  }
+
+  /* =========================================================
+     PORCELAIN EXPERIENCE
+  ========================================================== */
+
+  #experience{
+    padding:88px 72px!important;
+  }
+
+  .pe-head{
+    max-width:900px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  .pe-head h2{
+    font-size:60px!important;
+    line-height:1.02!important;
+  }
+
+  .pe-head p{
+    max-width:720px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:16px!important;
+    line-height:1.75!important;
+  }
+
+  .pe-visual{
+    width:100%!important;
+    max-width:1000px!important;
+    margin:42px auto!important;
+  }
+
+  .pe-photo,
+  .essence-photo{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+  }
+
+  .pe-photo img,
+  .essence-photo img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    object-fit:contain!important;
+    object-position:center!important;
+  }
+
+  .pe-quote{
+    max-width:820px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  .pe-quote p,
+  .essence-copy blockquote{
+    font-size:30px!important;
+    line-height:1.25!important;
+  }
+
+  .pe-values{
+    max-width:1000px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    gap:24px!important;
+  }
+
+  .pe-values article{
+    padding:30px!important;
+  }
+
+  .pe-values article h3{
+    font-size:27px!important;
+  }
+
+  .pe-values article p{
+    font-size:14px!important;
+    line-height:1.7!important;
+  }
+
+  .pe-signature{
+    max-width:1000px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  .pe-signature h3{
+    font-size:43px!important;
+    line-height:1.08!important;
+  }
+
+  /* =========================================================
+     EDITORIAL CARDS
+     Igual al teléfono: 2 + tarjeta ancha
+  ========================================================== */
+
+  .editorial-grid{
+    max-width:1000px!important;
+    margin:38px auto 0!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:20px!important;
+  }
+
+  .tile{
+    min-height:270px!important;
+    padding:28px!important;
+    border-radius:28px!important;
+  }
+
+  .tile.wide{
+    grid-column:1/-1!important;
+    min-height:210px!important;
+  }
+
+  .tile .num{
+    top:24px!important;
+    right:24px!important;
+    font-size:13px!important;
+  }
+
+  .tile h3{
+    font-size:30px!important;
+  }
+
+  .tile p{
+    font-size:13px!important;
+    line-height:1.6!important;
+  }
+
+  /* =========================================================
+     FACIALS
+  ========================================================== */
+
+  #servicios{
+    padding-top:88px!important;
+    padding-bottom:88px!important;
+  }
+
+  .services,
+  .service-menu{
+    width:100%!important;
+    max-width:1000px!important;
+    margin:38px auto 0!important;
+  }
+
+  .service-card{
+    width:100%!important;
+    padding:34px 84px 34px 32px!important;
+    box-sizing:border-box!important;
+  }
+
+  .service-card h3{
+    font-size:32px!important;
+    line-height:1.08!important;
+  }
+
+  .service-card p,
+  .includes,
+  .ideal,
+  .facial-details-body{
+    font-size:14px!important;
+    line-height:1.7!important;
+  }
+
+  .web-price{
+    font-size:19px!important;
+  }
+
+  .web-time{
+    font-size:11px!important;
+    letter-spacing:.13em!important;
+  }
+
+  .service-tag{
+    font-size:11px!important;
+  }
+
+  #servicios .facial-details > summary{
+    right:22px!important;
+    top:28px!important;
+  }
+
+  /* =========================================================
+     BROWS & LASHES
+  ========================================================== */
+
+  #brows-lashes{
+    padding-top:88px!important;
+    padding-bottom:88px!important;
+  }
+
+  #brows-lashes .bl-card{
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    max-width:1000px!important;
+    height:auto!important;
+    min-height:0!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:34px 84px 34px 32px!important;
+    box-sizing:border-box!important;
+  }
+
+  #brows-lashes .bl-card h3{
+    font-size:32px!important;
+    line-height:1.08!important;
+  }
+
+  #brows-lashes .bl-card p,
+  #brows-lashes .native-more{
+    font-size:14px!important;
+    line-height:1.7!important;
+  }
+
+  #brows-lashes .web-price{
+    font-size:19px!important;
+  }
+
+  #brows-lashes .web-time{
+    font-size:11px!important;
+  }
+
+  #brows-lashes .bl-arrow{
+    top:28px!important;
+    right:22px!important;
+  }
+
+  /* =========================================================
+     BOTONES + DE FACIALS / BROWS / TECNOLOGÍA
+  ========================================================== */
+
+  #servicios .facial-details > summary,
+  #brows-lashes .native-plus,
+  #brows-lashes .bl-arrow,
+  .tech-grid summary::after{
+    width:50px!important;
+    height:50px!important;
+    min-width:50px!important;
+    flex:0 0 50px!important;
+    font-size:22px!important;
+  }
+
+  /* =========================================================
+     ¿QUÉ ELEGIR?
+  ========================================================== */
+
+  #guide,
+  .guide-v1329{
+    padding:88px 72px!important;
+  }
+
+  .guide-head{
+    max-width:760px!important;
+    margin:0 auto 34px!important;
+  }
+
+  .guide-head h2{
+    font-size:56px!important;
+    line-height:1.02!important;
+  }
+
+  #guide .guide-head p{
+    font-size:15px!important;
+    line-height:1.75!important;
+  }
+
+  .guide-card{
+    width:100%!important;
+    max-width:760px!important;
+    margin:auto!important;
+    padding:36px!important;
+    border-radius:30px!important;
+  }
+
+  .guide-q .qnum{
+    font-size:12px!important;
+  }
+
+  .guide-q h3,
+  .guide-result h3{
+    font-size:32px!important;
+  }
+
+  .guide-q button,
+  .guide-choice{
+    padding:17px 18px!important;
+    margin:11px 0!important;
+    border-radius:17px!important;
+    font-size:14px!important;
+  }
+
+  /* =========================================================
+     AGENDAR CITA
+  ========================================================== */
+
+  #agenda{
+    padding-top:88px!important;
+    padding-bottom:88px!important;
+  }
+
+  .booking-polish{
+    max-width:900px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  .booking-polish .booking-kicker{
+    font-size:12px!important;
+    letter-spacing:.24em!important;
+  }
+
+  .booking-note,
+  .booking-process-v1329{
+    max-width:760px!important;
+    margin:28px auto!important;
+    padding:24px!important;
+    border-radius:22px!important;
+  }
+
+  .booking-note p,
+  .booking-process-v1329{
+    font-size:14px!important;
+    line-height:1.7!important;
+  }
+
+  /* =========================================================
+     FORMULARIOS
+  ========================================================== */
+
+  .form{
+    width:100%!important;
+    max-width:760px!important;
+    margin:28px auto 0!important;
+  }
+
+  .form input,
+  .form select,
+  .form textarea{
+    width:100%!important;
+    padding:16px 15px!important;
+    margin:7px 0!important;
+    border-radius:12px!important;
+    font-size:14px!important;
+  }
+
+  .form textarea{
+    min-height:120px!important;
+  }
+
+  .form label{
+    font-size:12px!important;
+  }
+
+  .form .cta,
+  .form button[type="submit"]{
+    min-height:56px!important;
+    font-size:12px!important;
+  }
+
+  /* =========================================================
+     FIDELIDAD
+     Mismo formato vertical de la tarjeta móvil.
+  ========================================================== */
+
+  #fidelidad{
+    padding-top:88px!important;
+    padding-bottom:88px!important;
+  }
+
+  .loyal,
+  .real-loyal{
+    width:100%!important;
+    max-width:650px!important;
+    margin:34px auto 0!important;
+    border-radius:30px!important;
+  }
+
+  .loyal-photo{
+    height:260px!important;
+  }
+
+  .loyal-top{
+    height:260px!important;
+  }
+
+  .medal,
+  .real-seal,
+  .seal{
+    width:90px!important;
+    height:90px!important;
+    margin-top:-45px!important;
+    font-size:30px!important;
+  }
+
+  .loyal h3,
+  .real-loyal h3{
+    font-size:34px!important;
+  }
+
+  .loyal .slogan,
+  .lslogan{
+    font-size:15px!important;
+  }
+
+  .loyal p,
+  .real-loyal p{
+    font-size:15px!important;
+    line-height:1.6!important;
+  }
+
+  .loyal-label,
+  .llabel{
+    font-size:10px!important;
+  }
+
+  .loyal-no,
+  .lnumber,
+  .count{
+    font-size:14px!important;
+  }
+
+  .stamps,
+  .real-stamps{
+    max-width:500px!important;
+    margin:22px auto!important;
+    gap:12px!important;
+  }
+
+  .stamp,
+  .real-stamps span{
+    font-size:16px!important;
+  }
+
+  .bar,
+  .progress{
+    max-width:500px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  /* =========================================================
+     GIFT CARD
+     Conserva exactamente el formato de tarjeta del móvil.
+  ========================================================== */
+
+  .gift-stage{
+    width:100%!important;
+    max-width:760px!important;
+    margin:36px auto 0!important;
+    padding:42px 30px 48px!important;
+    border-radius:32px!important;
+  }
+
+  .gift{
+    min-height:350px!important;
+    padding:38px!important;
+    border-radius:26px!important;
+  }
+
+  .gift:before{
+    right:32px!important;
+    top:28px!important;
+    font-size:28px!important;
+  }
+
+  .gift .gbrand{
+    font-size:27px!important;
+  }
+
+  .gift .for{
+    margin-top:68px!important;
+    font-size:11px!important;
+  }
+
+  .gift .name{
+    font-size:40px!important;
+    padding-bottom:11px!important;
+  }
+
+  .gift .bottom{
+    margin-top:28px!important;
+    font-size:11px!important;
+  }
+
+  .chips{
+    justify-content:center!important;
+    gap:10px!important;
+  }
+
+  .chip{
+    padding:11px 15px!important;
+    font-size:10px!important;
+  }
+
+  /* =========================================================
+     FAQ
+  ========================================================== */
+
+  #faq{
+    padding-top:88px!important;
+    padding-bottom:88px!important;
+  }
+
+  #faq details,
+  .faq details{
+    width:100%!important;
+    max-width:820px!important;
+    margin:0 auto!important;
+    padding:22px 2px!important;
+  }
+
+  #faq summary,
+  .faq summary{
+    font-size:22px!important;
+    line-height:1.3!important;
+  }
+
+  #faq details p,
+  .faq p{
+    font-size:14px!important;
+    line-height:1.75!important;
+  }
+
+  /* =========================================================
+     CONTACTO / FOOTER
+  ========================================================== */
+
+  #contacto,
+  .foot,
+  footer{
+    padding:72px!important;
+  }
+
+  .foot h2,
+  footer h2,
+  .contact-polish h2{
+    font-size:48px!important;
+    line-height:1.06!important;
+  }
+
+  .contact-intro{
+    max-width:700px!important;
+    font-size:15px!important;
+    line-height:1.75!important;
+  }
+
+  .foot a,
+  .contact-polish a,
+  .panel a{
+    padding:18px 0!important;
+    font-size:17px!important;
+  }
+
+  .foot .loc,
+  .contact-polish .loc{
+    margin-top:32px!important;
+    font-size:10px!important;
+    line-height:1.9!important;
+  }
+
+  /* =========================================================
+     BOTONES GENERALES
+  ========================================================== */
+
+  .cta,
+  .btn{
+    font-size:12px!important;
+  }
+
+  .full{
+    width:100%!important;
+    max-width:760px!important;
+  }
+
+  /* =========================================================
+     ESPACIADO DE ANCLAS
+  ========================================================== */
+
+  section[id]{
+    scroll-margin-top:110px!important;
+  }
 
 }
 </style></head><body><main class="phone">
