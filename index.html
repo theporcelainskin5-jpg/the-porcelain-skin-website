@@ -2311,6 +2311,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // Mostrar confirmación de Gift Card solo al regresar de Square
 if (new URLSearchParams(window.location.search).get('giftcard') === 'success') {
+ registrarGiftCardEnsupabase();
+
   const confirmacion = document.getElementById('gift-card-confirmada');
   if (confirmacion) {
     confirmacion.style.display = 'block';
@@ -2319,6 +2321,70 @@ if (new URLSearchParams(window.location.search).get('giftcard') === 'success') {
     }, 200);
   }
 }
+
+// Conexión Supabase - Gift Cards
+const SUPABASE_URL = 'https://aedtqbpueeyvxoowttkn.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_Zl2a0N40GakZakvzUfcufg_yvcTIrI_';
+
+async function registrarGiftCardEnSupabase() {
+  const datos = JSON.parse(localStorage.getItem('tpsGiftCard') || '{}');
+
+  if (!datos.monto || !datos.para || !datos.de) return;
+
+  // Evita registrar dos veces la misma compra si se recarga la página
+  if (localStorage.getItem('tpsGiftCardRegistrada') === 'true') return;
+
+  const monto = parseFloat(
+    String(datos.monto).replace('$', '').replace(/[^0-9.]/g, '')
+  );
+
+  if (!monto || monto <= 0) return;
+
+  const codigo =
+    'TPS-GC-' +
+    Date.now().toString(36).toUpperCase() +
+    Math.random().toString(36).substring(2, 5).toUpperCase();
+
+  const registro = {
+    code: codigo,
+    amount: monto,
+    balance: monto,
+    recipient_name: datos.para,
+    sender_name: datos.de,
+    recipient_email:
+      datos.entrega === 'Email' ? datos.contacto : null,
+    recipient_phone:
+      datos.entrega === 'WhatsApp' ? datos.contacto : null,
+    message: datos.mensaje || null,
+    delivery_method: datos.entrega || null,
+    delivery_date: datos.fecha || null,
+    status: 'pending'
+  };
+
+  try {
+    const respuesta = await fetch(`${SUPABASE_URL}/rest/v1/gift_cards`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_PUBLISHABLE_KEY,
+        'Authorization': `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify(registro)
+    });
+
+    if (!respuesta.ok) {
+      throw new Error(`Supabase: ${respuesta.status}`);
+    }
+
+    localStorage.setItem('tpsGiftCardRegistrada', 'true');
+    localStorage.setItem('tpsGiftCardCode', codigo);
+
+  } catch (error) {
+    console.error('No se pudo registrar la Gift Card:', error);
+  }
+}
+
 function guardarDatosGiftCard() {
   const datos = {
     para: document.getElementById('gto')?.value || '',
@@ -2331,6 +2397,9 @@ function guardarDatosGiftCard() {
   };
 
   localStorage.setItem('tpsGiftCard', JSON.stringify(datos));
+
+  localStorage.removeItem('tpsGiftCardRegistrada');
+localStorage.removeItem('tpsGiftCardCode');
 }
 function enviarDatosGiftCard() {
   const datos = JSON.parse(localStorage.getItem('tpsGiftCard') || '{}');
