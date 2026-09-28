@@ -1880,7 +1880,7 @@ min-height:930px!important;
   <button class="chip" type="button" onclick="document.getElementById('giftValue').textContent='$150';document.querySelectorAll('#regalo .chip').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')">$150</button>
   <button class="chip" type="button" onclick="document.getElementById('giftValue').textContent='otro monto';document.querySelectorAll('#regalo .chip').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')">OTRO MONTO</button>
 </div>
-<form class="form" onsubmit="try{guardarDatosGiftCard();}catch(e){console.error(e);}const m=document.getElementById('giftValue').textContent.trim();const links={'$50':'https://square.link/u/9fPflGNc','$75':'https://square.link/u/zH1qzGh1','$100':'https://square.link/u/PIUgiFF2','$150':'https://square.link/u/Bfe0NwG2','Otro monto':'https://square.link/u/niuvsVgy'};if(links[m])window.location.href=links[m];return false;">
+<form class="form" onsubmit="try{guardarDatosGiftCard();}catch(e){console.error(e);}const seleccionado=document.querySelector('#regalo .chip.selected');if(!seleccionado){alert('Selecciona un monto para tu Gift Card.');return false;}const m=seleccionado.textContent.trim();const links={'$50':'https://square.link/u/9fPflGNc','$75':'https://square.link/u/zH1qzGh1','$100':'https://square.link/u/PIUgiFF2','$150':'https://square.link/u/Bfe0NwG2','Otro monto':'https://square.link/u/niuvsVgy'};if(links[m])window.location.href=links[m];return false;">
   <input id="gto" type="text" placeholder="Para" required>
   <input id="gfrom" type="text" placeholder="De" required>
   <textarea id="gmsg" placeholder="Mensaje personal"></textarea>
